@@ -14,10 +14,9 @@ public class FrontController{
 	@RequestMapping(value = "", method = RequestMethod.GET)
 	public ModelAndView getHomeView(HttpServletRequest request) {
 		StringBuilder str=new StringBuilder("test");
-		str.append("string");
-		System.out.println(str.toString());
-		ModelAndView model = new ModelAndView("home");
-		return model;
+		int a=8,c=10;
+		a=a+c+2;
+		return new ModelAndView("home");
 	}
 
 }
