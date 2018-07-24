@@ -15,10 +15,7 @@ public class FrontController{
 	public ModelAndView getHomeView(HttpServletRequest request) {
 		StringBuilder str=new StringBuilder("test");
 		str.append("string");
-
-		if(!str.toString().isEmpty()){
-			System.out.println(str.toString());
-		}
+		System.out.println(str.toString() + " got it");
 		ModelAndView model = new ModelAndView("home");
 		return model;
 	}
